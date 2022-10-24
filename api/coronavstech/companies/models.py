@@ -19,7 +19,7 @@ class Company(models.Model):
     )
     last_update = models.DateTimeField(default=now, editable=True)
     application_link = models.URLField(blank=True)
-    nodes = models.CharField(max_length=100, blank=True)
+    notes = models.CharField(max_length=100, blank=True)
 
     def __str__(self) -> str:
         return self.name
